@@ -1,0 +1,37 @@
+# Minimal values.yaml for kube-prometheus-stack Helm chart
+
+# Enable or disable components
+prometheus:
+  enabled: true
+  service:
+    type: ClusterIP
+  serviceMonitorSelectorNilUsesHelmValues: false
+
+alertmanager:
+  enabled: true
+  service:
+    type: ClusterIP
+
+grafana:
+  enabled: true
+  service:
+    type: ClusterIP
+  adminPassword: "admin"
+
+# Node Exporter
+prometheus-node-exporter:
+  enabled: true
+
+# Kube State Metrics
+kubeStateMetrics:
+  enabled: true
+
+# Prometheus Operator
+prometheusOperator:
+  enabled: true
+
+# Custom resource selectors (optional)
+# serviceMonitorSelector: {}
+# podMonitorSelector: {}
+
+# Additional configuration can be added as needed
