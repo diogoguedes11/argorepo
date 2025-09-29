@@ -2,10 +2,7 @@
 
 This directory contains ArgoCD application definitions for deploying various services and tools in a Kubernetes cluster. Each subdirectory represents a different application or service, with its own `kustomization.yaml` file for managing configurations.
 
-
-
-# ARGOCD configuration for kustomize
-
+## ArgoCD configuration for kustomize
 
 ```yaml
 apiVersion: v1
